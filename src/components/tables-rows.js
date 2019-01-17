@@ -15,16 +15,22 @@ const TableRows = ({persons, sortBy}) => {
     
     
   
-    return(
+    return(      
       <table border="1" width="100%" cellPadding="5">
       <tbody>
+        <tr>
         <th onClick={() => sortBy('id')}>id</th>
-        <th>firstName</th>
-        <th>lastName</th>
+        <th onClick={() => sortBy('firstName')}>firstName</th>
+        <th onClick={() => sortBy('lastName')}>lastName</th>
         <th>email</th>
-        <th>phone</th>
-      {person}</tbody>     
+        <th>phone</th>        
+        </tr>
+        </tbody>
+      <tbody>        
+      {person}   
+      </tbody>  
     </table>
+    
     )
     
       }
