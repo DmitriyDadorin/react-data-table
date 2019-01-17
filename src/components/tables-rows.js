@@ -1,7 +1,7 @@
  import React from 'react';
 
 
-const TableRows = ({persons}) => {
+const TableRows = ({persons, sortBy}) => {
    
     const person = persons.map(persons => 
     <tr>
@@ -13,11 +13,17 @@ const TableRows = ({persons}) => {
     </tr> 
     )
     
-
+    
   
     return(
       <table border="1" width="100%" cellPadding="5">
-      <tbody>{person}</tbody>     
+      <tbody>
+        <th onClick={() => sortBy('id')}>id</th>
+        <th>firstName</th>
+        <th>lastName</th>
+        <th>email</th>
+        <th>phone</th>
+      {person}</tbody>     
     </table>
     )
     
