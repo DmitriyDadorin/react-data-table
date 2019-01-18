@@ -1,7 +1,4 @@
-.enterWinow{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.enterWinow{  
     background-color: black;
     position: absolute;
     width: 100%;
@@ -13,6 +10,10 @@
 .buttonData{
    padding: 15px;
    margin: 25px;
+}
+.butControll{
+    margin-left: 35%;
+    margin-top: 250px;
 }
 
 .hide{
