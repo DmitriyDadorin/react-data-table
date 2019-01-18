@@ -11,10 +11,7 @@ const TableRows = ({persons, sortBy}) => {
     <td>{persons.email}</td>
     <td>{persons.phone}</td>
     </tr> 
-    )
-    
-    
-  
+    )    
     return(      
       <table border="1" width="100%" cellPadding="5">
       <tbody>
@@ -29,12 +26,8 @@ const TableRows = ({persons, sortBy}) => {
       <tbody>        
       {person}   
       </tbody>  
-    </table>
-    
-    )
-    
-      }
-
+    </table>    
+    )}
     export default TableRows
 
     

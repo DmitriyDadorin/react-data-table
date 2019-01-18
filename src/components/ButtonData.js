@@ -2,9 +2,16 @@ import React from 'react';
 import './ButtonData.css';
 
 
-const ButtonData = ({miniData}) => {
+const ButtonData = ({miniData, start}) => {
+
+    let classNames = 'enterWinow';
+    if (!start) {
+      classNames += ' hide';
+    }
+  
+    
 return(
-    <div className='enterWinow'>        
+    <div className={classNames}>        
         <button onClick={miniData} className='buttonData'>Маленькая база</button>
         <button className='buttonData'>Большая база</button>
     </div>
