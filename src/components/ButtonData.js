@@ -1,6 +1,6 @@
 import React from 'react';
 import './ButtonData.css';
-import PreLoad from './pre-load'
+import PreLoad from './PreLoad'
 
 
 const ButtonData = ({miniData, maxData, start, loading}) => {
@@ -19,9 +19,7 @@ return(
         <button onClick={miniData} className='buttonData'>Маленькая база</button>
         <button onClick={maxData} className='buttonData'>Большая база</button>
     </div>
-    </div>
-    
-    
+    </div>   
 )}
 
 export default ButtonData
