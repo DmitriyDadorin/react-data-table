@@ -15,7 +15,7 @@ const TableRows = ({persons, sortBy}) => {
     </tr> 
     )    
     return(      
-      <table className='table table-bordered table-hover'>      
+      <table className=' table table-bordered table-striped'>      
       <thead>
         <tr>
         <th className='table-th' onClick={() => sortBy('id')}>#id</th>
